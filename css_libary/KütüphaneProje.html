@@ -1,0 +1,1241 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kütüphane Projesi</title>
+    <link rel="stylesheet" href="kütüphane.css">
+    <link rel="stylesheet" href="./assests/style.css">
+</head>
+
+<body>
+    <h2 class="baslik"><a href="bootstrap.html">Kütüphane Projesi</a></h2>
+
+    <div class="fix-nav-item">
+        <ol class="fix-navbar">
+            <li><a href="#1">Grid Sistemi</a></li>
+            <li><a href="#2">Renkler</a></li>
+            <li><a href="#3">Yazı Boyutları</a></li>
+            <li><a href="#4">Yazı Tipi</a></li>
+            <li><a href="#5">Margin & Padding</a></li>
+            <li><a href="#6">Slide Yapısı</a></li>
+            <li><a href="#7">Tablo Yapısı</a></li>
+            <li><a href="#8">Resim Sınıfları</a></li>
+            <li><a href="#9">Butonlar</a></li>
+            <li><a href="#10">Overflow Resimler</a></li>
+            <li><a href="#11.1">Solda Navbar Yapısı</a></li>
+            <li><a href="#11.2">Solda Fixed Navbar Yapısı</a></li>
+            <li><a href="#11.3">İnline Navbar Yapısı</a></li>
+            <li><a href="#12">Dropdown Menü Yapısı</a></li>
+            <li><a href="#13">Form Yapısı</a></li>
+        </ol>
+    </div>
+
+
+    <div class="code-items">
+        <ol class="code-list">
+            <li>
+                <h3 id="1">1- Grid Sistem</h3>
+                <div class="p-text">
+                    <p>Grid sistemi web sitesi içerisinde ki nesnelerin düzenini sağlamaya yardımcı olur. Bu sayede
+                        hangi nesnenin ne kadarlık yer kaplayacağı belirtilmiş olur.</p>
+                    <p>Bu yapı aynı zamanda web sitelerini daha kolay bir şekilde responsive yapı haline getirmeyi
+                        sağlar.</p>
+                    <p>Örnekte ki col yazılarının yanında ki sayılar o kolonun kaçlık alan kapladığını gösterir. Örnek:
+                        col3 3 kolonluk alan kaplar.</p>
+                    <p>col- kolunu ifade eder.</p>
+                    <p>col-sm- telefon responsive yapısı için geçerli kolonu ifade eder.</p>
+                    <p>col-md- tablet responsive yapısı için geçerli kolonu ifade eder.</p>
+                    <p>Aşağıda ki örnekte 12 kolonlu bir grid yapısı oluşturulmuştur.</p>
+                </div>
+                <div class="show-item">
+                    <div class="container">
+                        <div class="col-1 col-sm-12 col-md-6  bg-blue">
+                            col1
+                        </div>
+                        <div class="col-2 col-sm-12 col-md-6 bg-dark-blue">
+                            col2
+                        </div>
+                        <div class="col-3 col-sm-12 col-md-6 bg-gray">
+                            col3
+                        </div>
+                        <div class="col-4 col-sm-12 col-md-6 bg-green">
+                            col4
+                        </div>
+                        <div class="col-5 col-sm-12 col-md-6 bg-orange">
+                            col5
+                        </div>
+                        <div class="col-6 col-sm-12 col-md-6 bg-pink">
+                            col6
+                        </div>
+                        <div class="col-7 col-sm-12 col-md-6 bg-purple">
+                            col7
+                        </div>
+                        <div class="col-8 col-sm-12 col-md-6 bg-red">
+                            col8
+                        </div>
+                        <div class="col-9 col-sm-12 col-md-6 bg-turquoise">
+                            col9
+                        </div>
+                        <div class="col-10 col-sm-12 col-md-6 bg-yellow">
+                            col10
+                        </div>
+                        <div class="col-11 col-sm-12 col-md-6 bg-green">
+                            col11
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 bg-dark-blue">
+                            col12
+                        </div>
+                    </div>
+                </div>
+                <div class="diskatman">
+                    <div class="ickatman">
+                        <code data-lang="html" class="kod düzeni">
+                            <div>
+                                <span>&lt;div class="container"&gt;</span>
+<span>&lt;div&gt; class="col-1 col-sm-12 col-md-6 bg-blue"&gt;</span>
+<br><br>
+<span>col1</span>
+<br><br>
+<span>&lt;/div&gt;</span>
+<br><br>
+<span>&lt;div&gt; class="col-2 col-sm-12 col-md-6 bg-dark-blue"&gt;</span>
+<br><br>
+<span>col2</span>
+<br><br>
+<span>&lt;/div&gt;</span>
+<br><br>
+<span>&lt;div&gt; class="col-3 col-sm-12 col-md-6 bg-gray"&gt;</span>
+<br><br>
+<span>col3</span>
+<br><br>
+<span>&lt;/div&gt;</span>
+<br><br>
+<span>&lt;div&gt; class="col-4 col-sm-12 col-md-6 bg-green"&gt;</span>
+<br><br>
+<span>col4</span>
+<br><br>
+<span>&lt;/div&gt;</span>
+<br><br>
+<span>&lt;div&gt; class="col-5 col-sm-12 col-md-6 bg-orange"&gt;</span>
+<br><br>
+<span>col5</span>
+<br><br>
+<span>&lt;/div&gt;</span>
+<br><br>
+<span>&lt;div&gt; class="col-6 col-sm-12 col-md-6 bg-pink"&gt;</span>
+<br><br>
+<span>col6</span>
+<br><br>
+<span>&lt;/div&gt;</span>
+<br><br>
+<span>&lt;div&gt; class="col-7 col-sm-12 col-md-6 bg-purple"&gt;</span>
+<br><br>
+<span>col7</span>
+<br><br>
+<span>&lt;/div&gt;</span>
+<br><br>
+<span>&lt;div&gt; class="col-8 col-sm-12 col-md-6 bg-red"&gt;</span>
+<br><br>
+<span>col8</span>
+<br><br>
+<span>&lt;/div&gt;</span>
+<br><br>
+<span>&lt;div&gt; class="col-9 col-sm-12 col-md-6 bg-turquoise"&gt;</span>
+<br><br>
+<span>col9</span>
+<br><br>
+<span>&lt;/div&gt;</span>
+<br><br>
+<span>&lt;div&gt; class="col-10 col-sm-12 col-md-6 bg-yellow"&gt;</span>
+<br><br>
+<span>col10</span>
+<br><br>
+<span>&lt;/div&gt;</span>
+<br><br>
+<span>&lt;div&gt; class="col-11 col-sm-12 col-md-6 bg-green"&gt;</span>
+<br><br>
+<span>col11</span>
+<br><br>
+<span>&lt;/div&gt;</span>
+<br><br>
+<span>&lt;div&gt; class="col-12 col-sm-12 col-md-6 bg-dark-blue"&gt;</span>
+<br><br>
+<span>col12</span>
+<br><br>
+<span>&lt;/div&gt;</span>
+<br><br>
+<span>&lt;/div&gt;</span>
+
+                            </div>
+                        </code>
+                    </div>
+                </div>
+            </li>
+        </ol>
+        <ol class="code-list">
+            <li>
+                <h3 id="2">2- Renkler</h3>
+                <div class="p-text">
+                    <p>Renk sınıflarını kullanarak, yazı, arkaplan ve buton renklerini değiştirebilirsiniz. Ayrıca
+                        butonun
+                        üstüne gelindiğinde oluşacak olan rengide tanımlayabilirsiniz.</p>
+                    <p> bg- arkaplanı ifade eder.</p>
+                    <p> txt- yazıyı ifade eder.</p>
+                    <p>btn- imlecin buton üzerine geldiğinde ortaya çıkacak olan rengi ifade eder.</p>
+                    <p>Bunların yanına gelecek olan ekler;</p>
+                    <p>gray,dark-blue,red vs. ilgili rengi uygular.</p>
+                </div>
+                <div class="show-item">
+                    <btn class="bg-red txt-red btn-red" style="width: 100px; ">Kırmızı Arkaplan, Kırmızı Yazı, Kırmızı
+                        Hover</btn>
+                    <br><br>
+                    <btn class="bg-green txt-green btn-green" style="width: 100px; ">Yeşil Arkaplan, Yeşil Yazı, Yeşil
+                        Hover</btn>
+                </div>
+                <div class="diskatman">
+                    <div class="ickatman">
+                        <code data-lang="html" class="kod düzeni">
+                            <div>
+                                <span>&lt;btn class="bg-red txt-red btn-red" style="width: 100px; "&gt;Kırmızı Arkaplan, Kırmızı Yazı, Kırmızı Hover&lt;/btn&gt;</span>
+                                <br><br>
+                                <span>&lt;btn class="bg-green txt-green btn-green" style="width: 100px; "&gt;Yeşil Arkaplan, Yeşil Yazı, Yeşil Hover&lt;/btn&gt;</span>                                
+                            </div>
+                        </code>
+                    </div>
+                </div>
+            </li>
+        </ol>
+        <ol class="code-list">
+            <li>
+                <h3 id="3">3- Yazı Boyutları</h3>
+                <div class="p-text">
+                    <p>Site içerisinde ki yazıların boyutlarını ayarlamak için yazı boyutu sınıfını kullanabilirsiniz.
+                    </p>
+                    <p>fs- yazı boyutunu ifade eder. 1'den 10'a kadar büyütme seçeneği sunar.</p>
+                    <p>fsh- başlık yazısı boyutunu ifade eder. 1'den 5'e kadar büyütme seçeneği sunar.</p>
+                    <p>Yanına gelecek olan ekler;</p>
+                    <p></p>
+                    <p>.fs (yazı boyutu) için -1: 14px'i ifade eder ve her rakamda 3px artarak devam eder. </p>
+                    <p>.fsh (başlık yazı boyutu) için -1: 28px'i ifade eder ve her rakamda 6px artarak devam eder. </p>
+                </div>
+                <div class="show-item">
+                    <p class="fs-2">Bu yazı boyutu fs-1'dir.</p>
+                    <p class="fs-4">Bu yazı boyutu fs-4'dir.</p>
+                    <p class="fsh-1">Bu başlık yazısı boyutu fsh-1'dir.</p>
+                    <p class="fsh-2">Bu başlık yazısı boyutu fsh-2'dir.</p>
+                </div>
+                <div class="diskatman">
+                    <div class="ickatman">
+                        <code data-lang="html" class="kod düzeni">
+                            <div>
+                                <span>&lt;p&gt; class="fs-2"&gt;Bu yazı boyutu fs-1'dir.&lt;/p&gt;</span>
+                               <br><br>
+                                <span>&lt;p&gt; class="fs-4"&gt;Bu yazı boyutu fs-4'dir.&lt;/p&gt;</span>
+                                <br><br>
+                                <span>&lt;p&gt; class="fsh-1"&gt;Bu başlık yazısı boyutu fsh-1'dir.&lt;/p&gt;</span>
+                                <br><br>
+                                <span>&lt;p&gt; class="fsh-2"&gt;Bu başlık yazısı boyutu fsh-2'dir.&lt;/p&gt;</span>
+                            </div>
+                        </code>
+                    </div>
+                </div>
+            </li>
+        </ol>
+        <ol class="code-list">
+            <li>
+                <h3 id="4">4- Yazı Tipi</h3>
+                <div class="p-text">
+                    <p>Yazılarınızda kullanmak istediğiniz yazı tiplerini, yazı tipi sınıfından faydalanarak
+                        ayarlayabilirsiniz.</p>
+                    <p>Yazı tiplerinde öncelik sırası vardır. Virgülden önce ki yazı tipi önceliklidir fakat tarayıcı o
+                        yazı tipini desteklemiyorsa bir sonraki yazı tipi kullanılır.</p>
+                    <p>ff- yazı tipini ifade eder.</p>
+                    <p>Yanına gelecek olan ekler 1'den 5'e kadar farklı yazı tipidir. Aşağıda bu yazı tipleri
+                        belirtilmiştir.</p>
+                    <p>a-b-c yazı tipinde ki öncelik sırasıdır, 'a' ilk tercih yazı tipi, 'b' ikinci tercih, 'c' ise son
+                        tercih yazı tipidir. Duruma göre 'e' harfine kadar devam etmektedir.</p>
+                </div>
+                <div class="show-item">
+                    <p class="ff-1">1) a-Arial, b-Helvetica, c-sans-serif</p>
+                    <p class="ff-2">2) a-'Times New Roman', b-Times, c-serif</p>
+                    <p class="ff-3">3) a-Verdana, b-Geneva, c-Tahoma, d-sans-serif</p>
+                    <p class="ff-4">4) a-'Courier New', b-Courier, c-monospace</p>
+                    <p class="ff-5">5) a-'Gill Sans', b-'Gill Sans MT', c-Calibri, d-'Trebuchet MS', e-sans-serif</p>
+                </div>
+                <div class="diskatman">
+                    <div class="ickatman">
+                        <code data-lang="html" class="kod düzeni">
+                            <div>
+                                <span>&lt;p class="ff-1"&gt; 1) a-Arial, b-Helvetica, c-sans-serif&lt;/p&gt;</span>
+                                <br><br> 
+                                <span>&lt;p class="ff-2"&gt; 2) a-'Times New Roman', b-Times, c-serif&lt;/p&gt;</span>
+                                <br><br> 
+                                <span>&lt;p class="ff-3"&gt; 3) a-Verdana, b-Geneva, c-Tahoma, d-sans-serif&lt;/p&gt;</span>
+                                <br><br> 
+                                <span>&lt;p class="ff-4"&gt; 4) a-'Courier New', b-Courier, c-monospace&lt;/p&gt;</span>
+                                <br><br> 
+                                <span>&lt;p class="ff-5"&gt; 5) a-'Gill Sans', b-'Gill Sans MT', c-Calibri, d-'Trebuchet MS', e-sans-serif&lt;/p&gt;</span>
+                            </div>
+                        </code>
+                    </div>
+                </div>
+            </li>
+        </ol>
+        <ol class="code-list">
+            <li>
+                <h3 id="5">5- Margin & Padding</h3>
+                <div class="p-text">
+                    <p>Html içine yerleştirdiğiniz nesnelerinize hizalama vermek için margin ve padding
+                        sınıflarını kullanabilirsiniz. Sınıflar aşağıda ki gibi çalışmaktadır.
+                    </p>
+                    <p>
+                        m- harfi margini ifade eder.
+                    </p>
+                    <p>
+                        p- harfi paddingi ifade eder.
+                    </p>
+                    <p>
+                        Bunların yanına gelecek olan ekler;
+                    </p>
+                    <p>
+                        s-sol, e-sağ, t-üst, b-alt yönlerini ifade eder. Eğer hiçbir yön ifadesi eklenmezse her tarafa
+                        eşit
+                        değer verir.
+                    </p>
+                    <p>
+                        0, 1, 2, 3, 4, 5- 5px, 15px, 25px, 35px, 45px, 55px olarak her bir değerde 10 px artar.
+                    </p>
+                </div>
+                <div class="show-item">
+                    <div class="ms5 bg-blue" style="width: 50px; ">ms5</div>
+                    <div class="ms3 bg-green" style="width: 50px; ">ms3</div>
+                    <div class="ms1 bg-red" style="width: 50px; ">ms1</div>
+                    <div class="ps3 bg-pink" style="width: 50px; ">ps3</div>
+                    <div class="ps2 ms2 bg-yellow" style="width: 50px; ">ms2 ps2</div>
+                </div>
+                <div class="diskatman">
+                    <div class="ickatman">
+                        <code data-lang="html" class="kod düzeni">
+                            <div>
+                                <span class="spansk">&lt;div class="ms5 bg-blue" style="width: 50px;
+                                    "&gt;ms5&lt;/div&gt;
+                                </span>
+                                <br><br>
+                                <span>&lt;div class="ms3 bg-green" style="width: 50px; "&gt;ms3&lt;/div&gt;</span>
+                                <br><br>
+                                <span>&lt;div class="ms1 bg-red" style="width: 50px; "&gt;ms1&lt;/div&gt;</span>
+                                <br><br>
+                                <span>&lt;div class="ps3 bg-pink" style="width: 50px; "&gt;ps3&lt;/div&gt;</span>
+                                <br><br>
+                                <span>&lt;div class="ps2 ms2 bg-yellow" style="width: 50px; "&gt;ms2
+                                    ps2&lt;/div&gt;</span>
+                            </div>
+                        </code>
+                    </div>
+                </div>
+            </li>
+        </ol>
+        <ol class="code-list">
+            <li>
+                <h3 id="6">6- Slayt Yapısı</h3>
+                <div class="p-text">
+                    <p>Web sitesinde yayınlanmak üzere üç çeşit slayt yapısı kullanabilirsiniz. Bunun için aşağıda yazan
+                        html kodunu kullanabilirsiniz. </p>
+                    <p>Img etiketlerini kullanarak istediğiniz resmleri slaytta ki adetler geçerli olmak kaydıyla
+                        yükleyebilirsiniz.</p>
+                    <p>1.örnekte ki slaytta resimler hiç durmadan akarak ilerler fakat ilk ve son resimde dönüşün
+                        estetik olabilmesi için duraklar ve tekrardan akış halinde gitmeye devam eder.</p>
+                    <p>2.örnekte resimler soldan sağa her resimde görseli incelemeye vakit verecek oranda duraklama
+                        yaparak slayt gösterisine devam eder.</p>
+                    <p>3.örnekte resimler yukarıdan aşağıya her resimde görseli incelemeye vakit verecek oranda
+                        duraklama yaparak slayt gösterisine devam eder.</p>
+                    <p>Bu yapılar responsive olarak tasarlanmıştır. Koyduğunuz div içine uyum sağlayacak, telefon ve
+                        tablette ki ekran oranlarına göre de kendisini uygun ölçülere getirecektir.</p>
+                    <p>2. ve 3. örnekteki slaytlar 4 adet resim olarak görüntülenmektedir fakat div içerisinde 5 adet
+                        resim yüklenmiştir. 5. resim 1. resmin aynısıdır. Akışta ki geri dönüşü bozmamak için 5. img
+                        etiketine 1.resminizi koymanız gerekmektedir.</p>
+                    <p></p>
+                </div>
+                <div class="show-item">
+                    <!-- Slider Non-Stop -->
+                    <div class="slider-ns-container">
+                        <div class="slider-ns">
+                            <div class="slide-ns">
+                                <div class="img-center">
+                                    <img src="./assests/img/slider1.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="slide-ns">
+                                <div class="img-center">
+                                    <img src="./assests/img/slider2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="slide-ns">
+                                <div class="img-center">
+                                    <img src="./assests/img/slider3.jpeg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br><br><br>
+
+                    <!-- Slider Stopper -->
+                    <div class="slider-s">
+                        <div class="slider-cont">
+                            <img src="./assests/img/slider1.jpg" alt="">
+                            <img src="./assests/img/slider2.jpg" alt="">
+                            <img src="./assests/img/slider3.jpeg" alt="">
+                            <img src="./assests/img/slider4.jpg" alt="">
+                            <img src="./assests/img/slider1.jpg" alt="">
+                        </div>
+                    </div>
+                    <br><br><br>
+
+                    <!-- Slider Up to Down  -->
+
+                    <div class="slider-ud">
+                        <div class="slider-ud-cont">
+                            <img src="./assests/img/slider1.jpg" alt="">
+                            <img src="./assests/img/slider2.jpg" alt="">
+                            <img src="./assests/img/slider3.jpeg" alt="">
+                            <img src="./assests/img/slider4.jpg" alt="">
+                            <img src="./assests/img/slider1.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="diskatman">
+                    <div class="ickatman">
+                        <code data-lang="html" class="kod düzeni">
+                            <div>
+                                <span>&lt;!-- Slider Non-Stop --&gt;</span>
+                                <br><br>
+                                <span>&lt;div class="slider-ns-container"&gt;</span>
+                                <br><br>
+                                <span>&lt;div class="slider-ns"&gt;</span>
+                                <br><br>
+                                <span>&lt;div class="slide-ns"&gt;</span>
+                                <br><br>
+                                <span>&lt;div class="img-center"&gt;</span>
+                                <br><br>
+                                <span>&lt;img src="./assests/img/slider1.jpg" alt=""&gt;</span>
+                                <br><br>
+                                <span>&lt;/div&gt;</span>
+                                <br><br>
+                                <span>&lt;/div&gt;</span>
+                                <br><br>
+                                <span>&lt;div class="slide-ns"&gt;</span>
+                                <br><br>
+                                <span>&lt;div class="img-center"&gt;</span>
+                                <br><br>
+                                <span>&lt;img src="./assests/img/slider2.jpg" alt=""&gt;</span>
+                                <br><br>
+                                <span>&lt;/div&gt;</span>
+                                <br><br>
+                                <span>&lt;/div&gt;</span>
+                                <br><br>
+                                <span>&lt;div class="slide-ns"&gt;</span>
+                                <br><br>
+                                <span>&lt;div class="img-center"&gt;</span>
+                                <br><br>
+                                <span>&lt;img src="./assests/img/slider3.jpeg" alt=""&gt;</span>
+                                <br><br>
+                                <span>&lt;/div&gt;</span>
+                                <br><br>
+                                <span>&lt;/div&gt;</span>
+                                <br><br>
+                                <span>&lt;/div&gt;</span>
+                                <br><br>
+                                <span>&lt;/div&gt;</span>
+                                <br><br>
+                                <span>&lt;br&gt;&lt;br&gt;&lt;br&gt;</span>
+                                <br><br>
+                                <span>&lt;!-- Slider Stopper --&gt;</span>
+                                <br><br>
+                                <span>&lt;div class="slider-s"&gt;</span>
+                                <br><br>
+                                <span>&lt;div class="slider-cont"&gt;</span>
+                                <br><br>
+                                <span>&lt;img src="./assests/img/slider1.jpg" alt=""&gt;</span>
+                                <br><br>
+                                <span>&lt;img src="./assests/img/slider2.jpg" alt=""&gt;</span>
+                                <br><br>
+                                <span>&lt;img src="./assests/img/slider3.jpeg" alt=""&gt;</span>
+                                <br><br>
+                                <span>&lt;img src="./assests/img/slider4.jpg" alt=""&gt;</span>
+                                <br><br>
+                                <span>&lt;img src="./assests/img/slider1.jpg" alt=""&gt;</span>
+                                <br><br>
+                                <span>&lt;/div&gt;</span>
+                                <br><br>
+                                <span>&lt;/div&gt;</span>
+                                <br><br>
+                                <span>&lt;br&gt;&lt;br&gt;&lt;br&gt;</span>
+                                <br><br>
+                                <span>&lt;!-- Slider Up to Down --&gt;</span>
+                                <br><br>
+                                <span>&lt;div class="slider-ud"&gt;</span>
+                                <br><br>
+                                <span>&lt;div class="slider-ud-cont"&gt;</span>
+                                <br><br>
+                                <span>&lt;img src="./assests/img/slider1.jpg" alt=""&gt;</span>
+                                <br><br>
+                                <span>&lt;img src="./assests/img/slider2.jpg" alt=""&gt;</span>
+                                <br><br>
+                                <span>&lt;img src="./assests/img/slider3.jpeg" alt=""&gt;</span>
+                                <br><br>
+                                <span>&lt;img src="./assests/img/slider4.jpg" alt=""&gt;</span>
+                                <br><br>
+                                <span>&lt;img src="./assests/img/slider1.jpg" alt=""&gt;</span>
+                                <br><br>
+                                <span>&lt;/div&gt;</span>
+                                <br><br>
+                                <span>&lt;/div&gt;</span>
+                            </div>
+                        </code>
+                    </div>
+                </div>
+            </li>
+        </ol>
+        <ol class="code-list">
+            <li>
+                <h3 id="7">7- Tablo Yapısı</h3>
+                <div class="p-text">
+                    <p>Üç çeşit tablo yapısı oluşturulmuştur. Tercihinize göre kullanmak istediğiniz tablonun sınıfını
+                        table etiketiniz içine yazarak kullanabilirsiniz.</p>
+                    <p>table- tablo sınıfını belirtir bunun sonuna gelecek ek isim tablo çeşidini belirtmenizi sağlar.
+                    </p>
+                    <p>-border kenarlıklı tabloyu belirtir.</p>
+                    <p>-striped zebra desenli tabloyu belirtir.</p>
+                    <p>-hover tablo hücrelerinde gezerken hücrelere hover ile odaklama yapar.</p>
+                </div>
+                <div class="show-item">
+                    <table class="table-border">
+                        <tr>
+                            <th>Lorem, ipsum dolor.</th>
+                            <th>Lorem, ipsum dolor.</th>
+                            <th>Lorem, ipsum dolor.</th>
+                        </tr>
+                        <tr>
+                            <td>Lorem, ipsum dolor.</td>
+                            <td>Lorem, ipsum dolor.</td>
+                            <td>Lorem, ipsum dolor.</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem, ipsum dolor.</td>
+                            <td>Lorem, ipsum dolor.</td>
+                            <td>Lorem, ipsum dolor.</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem, ipsum dolor.</td>
+                            <td>Lorem, ipsum dolor.</td>
+                            <td>Lorem, ipsum dolor.</td>
+                        </tr>
+                    </table>
+                    <br><br><br>
+                    <table class="table-striped">
+                        <tr>
+                            <th>Lorem, ipsum dolor.</th>
+                            <th>Lorem, ipsum dolor.</th>
+                            <th>Lorem, ipsum dolor.</th>
+                        </tr>
+                        <tr>
+                            <td>Lorem, ipsum dolor.</td>
+                            <td>Lorem, ipsum dolor.</td>
+                            <td>Lorem, ipsum dolor.</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem, ipsum dolor.</td>
+                            <td>Lorem, ipsum dolor.</td>
+                            <td>Lorem, ipsum dolor.</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem, ipsum dolor.</td>
+                            <td>Lorem, ipsum dolor.</td>
+                            <td>Lorem, ipsum dolor.</td>
+                        </tr>
+                    </table>
+                    <br><br><br>
+                    <table class="table-hover">
+                        <tr>
+                            <th>Lorem, ipsum dolor.</th>
+                            <th>Lorem, ipsum dolor.</th>
+                            <th>Lorem, ipsum dolor.</th>
+                        </tr>
+                        <tr>
+                            <td>Lorem, ipsum dolor.</td>
+                            <td>Lorem, ipsum dolor.</td>
+                            <td>Lorem, ipsum dolor.</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem, ipsum dolor.</td>
+                            <td>Lorem, ipsum dolor.</td>
+                            <td>Lorem, ipsum dolor.</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem, ipsum dolor.</td>
+                            <td>Lorem, ipsum dolor.</td>
+                            <td>Lorem, ipsum dolor.</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="diskatman">
+                    <div class="ickatman">
+                        <code data-lang="html" class="kod düzeni">
+                            <div>
+                                <span>&lt;table class="table-border"&gt;
+                                    <br><br>
+                                    <span>&lt;tr&gt;</span>
+                                    <br><br>
+                                    <span>&lt;th&gt;Lorem, ipsum dolor.&lt;/th&gt;</span>
+                                    <br><br>
+                                    <span>&lt;th&gt;Lorem, ipsum dolor.&lt;/th&gt;</span>
+                                    <br><br>
+                                    <span>&lt;th&gt;Lorem, ipsum dolor.&lt;/th&gt;</span>
+                                    <br><br>
+                                    <span>&lt;/tr&gt;</span>
+                                    <br><br>
+                                    <span>&lt;tr&gt;</span>
+                                    <br><br>
+                                    <span>&lt;td&gt;Lorem, ipsum dolor.&lt;/td&gt;</span>
+                                    <br><br>
+                                    <span>&lt;td&gt;Lorem, ipsum dolor.&lt;/td&gt;</span>
+                                    <br><br>
+                                    <span>&lt;td&gt;Lorem, ipsum dolor.&lt;/td&gt;</span>
+                                    <br><br>
+                                    <span>&lt;/tr&gt;</span>
+                                    <br><br>
+                                    <span>&lt;tr&gt;</span>
+                                    <br><br>
+                                    <span>&lt;td&gt;Lorem, ipsum dolor.&lt;/td&gt;</span>
+                                    <br><br>
+                                    <span>&lt;td&gt;Lorem, ipsum dolor.&lt;/td&gt;</span>
+                                    <br><br>
+                                    <span>&lt;td&gt;Lorem, ipsum dolor.&lt;/td&gt;</span>
+                                    <br><br>
+                                    <span>&lt;/tr&gt;</span>
+                                    <br><br>
+                                    <span>&lt;tr&gt;</span>
+                                    <br><br>
+                                    <span>&lt;td&gt;Lorem, ipsum dolor.&lt;/td&gt;</span>
+                                    <br><br>
+                                    <span>&lt;td&gt;Lorem, ipsum dolor.&lt;/td&gt;</span>
+                                    <br><br>
+                                    <span>&lt;td&gt;Lorem, ipsum dolor.&lt;/td&gt;</span>
+                                    <br><br>
+                                    <span>&lt;/tr&gt;</span>
+                                    <br><br>
+                                    <span>&lt;/table&gt;</span>
+                                    <br><br>
+                                    <span>&lt;br&gt;&lt;br&gt;&lt;br&gt;</span>
+                                    <br><br>
+                                    <span>&lt;table class="table-striped"&gt;</span>
+                                    <br><br>
+                                    <span>&lt;tr&gt;</span>
+                                    <br><br>
+                                    <span>&lt;th&gt;Lorem, ipsum dolor.&lt;/th&gt;</span>
+                                    <br><br>
+                                    <span>&lt;th&gt;Lorem, ipsum dolor.&lt;/th&gt;</span>
+                                    <br><br>
+                                    <span>&lt;th&gt;Lorem, ipsum dolor.&lt;/th&gt;</span>
+                                    <br><br>
+                                    <span>&lt;/tr&gt;</span>
+                                    <br><br>
+                                    <span>&lt;tr&gt;</span>
+                                    <br><br>
+                                    <span>&lt;td&gt;Lorem, ipsum dolor.&lt;/td&gt;</span>
+                                    <br><br>
+                                    <span>&lt;td&gt;Lorem, ipsum dolor.&lt;/td&gt;</span>
+                                    <br><br>
+                                    <span>&lt;td&gt;Lorem, ipsum dolor.&lt;/td&gt;</span>
+                                    <br><br>
+                                    <span>&lt;/tr&gt;</span>
+                                    <br><br>
+                                    <span>&lt;tr&gt;</span>
+                                    <br><br>
+                                    <span>&lt;td&gt;Lorem, ipsum dolor.&lt;/td&gt;</span>
+                                    <br><br>
+                                    <span>&lt;td&gt;Lorem, ipsum dolor.&lt;/td&gt;</span>
+                                    <br><br>
+                                    <span>&lt;td&gt;Lorem, ipsum dolor.&lt;/td&gt;</span>
+                                    <br><br>
+                                    <span>&lt;/tr&gt;</span>
+                                    <br><br>
+                                    <span>&lt;tr&gt;</span>
+                                    <br><br>
+                                    <span>&lt;td&gt;Lorem, ipsum dolor.&lt;/td&gt;</span>
+                                    <br><br>
+                                    <span>&lt;td&gt;Lorem, ipsum dolor.&lt;/td&gt;</span>
+                                    <br><br>
+                                    <span>&lt;td&gt;Lorem, ipsum dolor.&lt;/td&gt;</span>
+                                    <br><br>
+                                    <span>&lt;/tr&gt;</span>
+                                    <br><br>
+                                    <span>&lt;/table&gt;</span>
+                                    <br><br>
+                                    <span>&lt;br&gt;&lt;br&gt;&lt;br&gt;</span>
+                                    <br><br>
+                                    <span>&lt;table class="table-hover"&gt;</span>
+                                    <br><br>
+                                    <span>&lt;tr&gt;</span>
+                                    <br><br>
+                                    <span>&lt;th&gt;Lorem, ipsum dolor.&lt;/th&gt;</span>
+                                    <br><br>
+                                    <span>&lt;th&gt;Lorem, ipsum dolor.&lt;/th&gt;</span>
+                                    <br><br>
+                                    <span>&lt;th&gt;Lorem, ipsum dolor.&lt;/th&gt;</span>
+                                    <br><br>
+                                    <span>&lt;/tr&gt;</span>
+                                    <br><br>
+                                    <span>&lt;tr&gt;</span>
+                                    <br><br>
+                                    <span>&lt;td&gt;Lorem, ipsum dolor.&lt;/td&gt;</span>
+                                    <br><br>
+                                    <span>&lt;td&gt;Lorem, ipsum dolor.&lt;/td&gt;</span>
+                                    <br><br>
+                                    <span>&lt;td&gt;Lorem, ipsum dolor.&lt;/td&gt;</span>
+                                    <br><br>
+                                    <span>&lt;/tr&gt;</span>
+                                    <br><br>
+                                    <span>&lt;tr&gt;</span>
+                                    <br><br>
+                                    <span>&lt;td&gt;Lorem, ipsum dolor.&lt;/td&gt;</span>
+                                    <br><br>
+                                    <span>&lt;td&gt;Lorem, ipsum dolor.&lt;/td&gt;</span>
+                                    <br><br>
+                                    <span>&lt;td&gt;Lorem, ipsum dolor.&lt;/td&gt;</span>
+                                    <br><br>
+                                    <span>&lt;/tr&gt;</span>
+                                    <br><br>
+                                    <span>&lt;tr&gt;</span>
+                                    <br><br>
+                                    <span>&lt;td&gt;Lorem, ipsum dolor.&lt;/td&gt;</span>
+                                    <br><br>
+                                    <span>&lt;td&gt;Lorem, ipsum dolor.&lt;/td&gt;</span>
+                                    <br><br>
+                                    <span>&lt;td&gt;Lorem, ipsum dolor.&lt;/td&gt;</span>
+                                    <br><br>
+                                    <span>&lt;/tr&gt;</span>
+                                    <br><br>
+                                    <span>&lt;/table&gt;</span>
+                            </div>
+                        </code>
+                    </div>
+                </div>
+            </li>
+        </ol>
+        <ol class="code-list">
+            <li>
+                <h3 id="8">8- Resim Sınıfları</h3>
+                <div class="p-text">
+                    <p>Resimlerinizin sayfanızın 50% sini kaplamasını istiyorsanız aşağıda ki resim sınıfnı
+                        kullanabilirsiniz. Her cihazda resim kendisini ekranın %50 genişliğine göre ayarlar.</p>
+                    <p>img- resim sınıfını temsil eder bunu img etiketini kapsayan parent etiketine uygulayabilirsiniz.
+                    </p>
+                    <p>-br ifadesi resminizin kenarlarını %9 oranında yuvarlar, bu yüzden responsive bir yapı oluşturur.
+                        Her cihazda aynı oranda kıvrımlar görürsünüz. </p>
+                    <p>-st ifadesi ise resminizi olduğu orjinal yapısında tutmaya yarar.</p>
+                </div>
+                <div class="show-item">
+                    <div class="img-br">
+                        <img src="./assests/img/nature.jpg" alt="">
+                    </div>
+                    <br><br>
+                    <div class="img-st">
+                        <img src="./assests/img/nature.jpg" alt="">
+                    </div>
+                </div>
+                <div class="diskatman">
+                    <div class="ickatman">
+                        <code data-lang="html" class="kod düzeni">
+                            <div>
+                                <span>&lt;div class="show-item"&gt;</span>
+    <br><br>
+                                <span>&lt;div class="img-br"&gt;</span>
+        <br><br>
+                                <span>&lt;img src="./assests/img/nature.jpg" alt=""&gt;</span>
+        <br><br>
+                                <span>&lt;/div&gt;</span>
+        <br><br>
+                                <span>&lt;br&gt;&lt;br&gt;</span>
+        <br><br>
+                                <span>&lt;div class="img-st"&gt;</span>
+            <br><br>
+                                <span>&lt;img src="./assests/img/nature.jpg" alt=""&gt;</span>
+            <br><br>
+                                <span>&lt;/div&gt;</span>
+            <br><br>
+                                <span>&lt;/div&gt;</span>
+                            </div>
+                        </code>
+                    </div>
+                </div>
+            </li>
+        </ol>
+        <ol class="code-list">
+            <li>
+                <h3 id="9">9- Butonlar</h3>
+                <div class="p-text">
+                    <p>10'ar adet koyu arka plan renginde ve saydam arka plan renginde buton oluşturulmuştur. Butonların
+                        üstüne imleç ile gelindiğinde butonlar parlıyor. Renklerle uyumlu olarak renk değiştiriyor.</p>
+                    <p>Butonları kullanmak için button etiketinizin içine gerekli sınıfı çağırmanız gerekmektedir.</p>
+                    <p>btn- butonu ifade eder.</p>
+                    <p>-s koyu arka plan rengini ifade eder.</p>
+                    <p>-out saydam arka plan rengini ifade eder.</p>
+                    <p>İsteğinize göre arka plan renk tipini seçtikten sonra red,gray vs. gibi istediğiniz herhangi bir
+                        rengi seçerseniz, seçilen arka plan rengiyle uyumlu hover ve metin rengi otomatik olarak
+                        tanımlanacaktır.</p>
+                </div>
+                <div class="show-item">
+                    <button class="btn-s-red">Lorem, ipsum.</button>
+                    <button class="btn-out-red">Lorem, ipsum.</button>
+                    <button class="btn-s-dark-blue">Lorem, ipsum.</button>
+                    <button class="btn-out-dark-blue">Lorem, ipsum.</button>
+                    <button class="btn-s-green">Lorem, ipsum.</button>
+                    <button class="btn-out-green">Lorem, ipsum.</button>
+                    <button class="btn-s-yellow">Lorem, ipsum.</button>
+                    <button class="btn-out-yellow">Lorem, ipsum.</button>
+                    <button class="btn-s-orange">Lorem, ipsum.</button>
+                    <button class="btn-out-orange">Lorem, ipsum.</button>
+                    <br><br>
+                    <button class="btn-s-gray">Lorem, ipsum.</button>
+                    <button class="btn-out-gray">Lorem, ipsum.</button>
+                    <button class="btn-s-purple">Lorem, ipsum.</button>
+                    <button class="btn-out-purple">Lorem, ipsum.</button>
+                    <button class="btn-s-brown">Lorem, ipsum.</button>
+                    <button class="btn-out-brown">Lorem, ipsum.</button>
+                    <button class="btn-s-blue">Lorem, ipsum.</button>
+                    <button class="btn-out-blue">Lorem, ipsum.</button>
+                    <button class="btn-s-pink">Lorem, ipsum.</button>
+                    <button class="btn-out-pink">Lorem, ipsum.</button>
+                </div>
+                <div class="diskatman">
+                    <div class="ickatman">
+                        <code data-lang="html" class="kod düzeni">
+                            <div>
+                                <span>&lt;button class="btn-s-red"&gt;Lorem, ipsum.&lt;/button&gt;</span>   
+                                <br><br>
+                                <span>&lt;button class="btn-out-red"&gt;Lorem, ipsum.&lt;/button&gt;</span> 
+                                <br><br>
+                                <span>&lt;button class="btn-s-dark-blue"&gt;Lorem, ipsum.&lt;/button&gt;</span>
+                                <br><br>
+                                <span>&lt;button class="btn-out-dark-blue"&gt;Lorem, ipsum.&lt;/button&gt;</span>   
+                                <br><br>
+                                <span>&lt;button class="btn-s-green"&gt;Lorem, ipsum.&lt;/button&gt;</span>   
+                                <br><br>
+                                <span>&lt;button class="btn-out-green"&gt;Lorem, ipsum.&lt;/button&gt;</span>   
+                                <br><br>
+                                <span>&lt;button class="btn-s-yellow"&gt;Lorem, ipsum.&lt;/button&gt;</span>
+                                <br><br>
+                                <span>&lt;button class="btn-out-yellow"&gt;Lorem, ipsum.&lt;/button&gt;</span>
+                                <br><br>
+                                <span>&lt;button class="btn-s-orange"&gt;Lorem, ipsum.&lt;/button&gt;</span>
+                                <br><br>
+                                <span>&lt;button class="btn-out-orange"&gt;Lorem, ipsum.&lt;/button&gt;</span>
+                                <br><br>
+                                <span>&lt;br&gt;&lt;br&gt;</span>
+                                <br><br>
+                                <span>&lt;button class="btn-s-gray"&gt;Lorem, ipsum.&lt;/button&gt;</span>
+                                <br><br>
+                                <span>&lt;button class="btn-out-gray"&gt;Lorem, ipsum.&lt;/button&gt;</span>
+                                <br><br>
+                                <span>&lt;button class="btn-s-purple"&gt;Lorem, ipsum.&lt;/button&gt;</span>
+                                <br><br>
+                                <span>&lt;button class="btn-out-purple"&gt;Lorem, ipsum.&lt;/button&gt;</span>
+                                <br><br>
+                                <span>&lt;button class="btn-s-brown"&gt;Lorem, ipsum.&lt;/button&gt;</span>
+                                <br><br>
+                                <span>&lt;button class="btn-out-brown"&gt;Lorem, ipsum.&lt;/button&gt;</span>
+                                <br><br>
+                                <span>&lt;button class="btn-s-blue"&gt;Lorem, ipsum.&lt;/button&gt;</span>
+                                <br><br>
+                                <span>&lt;button class="btn-out-blue"&gt;Lorem, ipsum.&lt;/button&gt;</span>
+                                <br><br>
+                                <span>&lt;button class="btn-s-pink"&gt;Lorem, ipsum.&lt;/button&gt;</span>
+                                <br><br>
+                                <span>&lt;button class="btn-out-pink"&gt;Lorem, ipsum.&lt;/button&gt;</span>
+                            </div>
+                        </code>
+                    </div>
+                </div>
+            </li>
+        </ol>
+        <ol class="code-list">
+            <li>
+                <h3 id="10">10- Overflow Resimler</h3>
+                <div class="p-text">
+                    <p>4 adet resimleri kapsayan sınıflar oluşturulmuştur. Bu sınıfları img etiketinin parent elementine
+                        çağırarak kullanabilirsiniz. Arkaplan rengi işlevin kolaylıkla görülebilmesi için verilmiştir.
+                    </p>
+                    <p>-img-ovf overflow resmi ifade eder.</p>
+                    <p>-ct ifadesi resimin ilgili div içinde her yönden ortalanmasını sağlar.</p>
+                    <p>-h ifadesi resimin ilgili div içinde yüksekliğe göre ortalanmasını sağlar.</p>
+                    <p>-w ifadesi resimin ilgili div içinde genişliğe göre ortalanmasını sağlar.</p>
+                    <p>-o ifadesi resimin orijinal boyutunu korur. Taşan kısımlar div içinde gizlenir.</p>
+                </div>
+                <div class="show-item">
+                    <div class="img-ovf-ct">
+                        <img src="./assests/img/nature.jpg" alt="">
+                    </div>
+                    <br>
+                    <div class="img-ovf-h">
+                        <img src="./assests/img/nature.jpg" alt="">
+                    </div>
+                    <div class="img-ovf-w">
+                        <img src="./assests/img/nature.jpg" alt="">
+                    </div>
+                    <div class="img-ovf-o">
+                        <img src="./assests/img/nature.jpg" alt="">
+                    </div>
+                </div>
+                <div class="diskatman">
+                    <div class="ickatman">
+                        <code data-lang="html" class="kod düzeni">
+                            <div>
+                            
+<span>&lt;div&gt; class="img-ovf-ct"&gt;</span>
+<br><br>
+<span>&lt;img src="./assests/img/nature.jpg" alt=""&gt;</span>
+<br><br>
+<span>&lt;/div&gt;</span>
+<br><br>
+<span>&lt;br&gt;</span>
+<br><br>
+<span>&lt;div&gt; class="img-ovf-h"&gt;</span>
+<br><br>
+<span>&lt;img src="./assests/img/nature.jpg" alt=""&gt;</span>
+<br><br>
+<span>&lt;/div&gt;</span>
+<br><br>
+<span>&lt;div&gt; class="img-ovf-w"&gt;</span>
+<br><br>
+<span>&lt;img src="./assests/img/nature.jpg" alt=""&gt;</span>
+<br><br>
+<span>&lt;/div&gt;</span>
+<br><br>
+<span>&lt;div&gt; class="img-ovf-o"&gt;</span>
+<br><br>
+<span>&lt;img src="./assests/img/nature.jpg" alt=""&gt;</span>
+<br><br>
+<span>&lt;/div&gt;</span>
+                            </div>
+                        </code>
+                    </div>
+                </div>
+            </li>
+        </ol>
+        <ol class="code-list">
+            <li>
+                <h3 id="11.1">11.1- Solda Navbar Yapısı</h3>
+                <div class="p-text">
+                    <p>Bu navbar web sitesinin sol tarafında durur. Hover ve metin özellikleri verilmiştir.</p>
+                    <p>Navbar web sitesinde genişlik olarak 15% yer kaplar. Yüksekliği ise boydan boyadır.</p>
+                    <p>Html kodunu kopyalarak sitenizde kullanabilirsiniz.</p>
+                </div>
+                <div class="show-item">
+                    <div class="nav-item">
+                        <ol class="navbar">
+                            <li><a href="#">Menü </a></li>
+                            <li><a href="#">Menü </a></li>
+                            <li><a href="#">Menü </a></li>
+                            <li><a href="#">Menü </a></li>
+                            <li><a href="#">Menü </a></li>
+                            <li><a href="#">Menü </a></li>
+                        </ol>
+                    </div>  
+                </div>
+                <div class="diskatman">
+                    <div class="ickatman">
+                        <code data-lang="html" class="kod düzeni">
+                            <div>
+                                <span>&lt;div class="nav-item"&gt;</span>
+                                <br><br>
+                                <span>&lt;ol class="navbar"&gt;</span>
+                                <br><br>
+                                <span>&lt;li&gt;&lt;a href="#"&gt;Menü &lt;/a&gt;&lt;/li&gt;</span>
+                                <br><br>
+                                <span>&lt;li&gt;&lt;a href="#"&gt;Menü &lt;/a&gt;&lt;/li&gt;</span>
+                                <br><br>
+                                <span>&lt;li&gt;&lt;a href="#"&gt;Menü &lt;/a&gt;&lt;/li&gt;</span>
+                                <br><br>
+                                <span>&lt;li&gt;&lt;a href="#"&gt;Menü &lt;/a&gt;&lt;/li&gt;</span>
+                                <br><br>
+                                <span>&lt;li&gt;&lt;a href="#"&gt;Menü &lt;/a&gt;&lt;/li&gt;</span>
+                                <br><br>
+                                <span>&lt;li&gt;&lt;a href="#"&gt;Menü &lt;/a&gt;&lt;/li&gt;</span>
+                                <br><br>
+                                <span>&lt;/ol&gt;</span>
+                                <br><br>
+                                <span>&lt;/div&gt;</span>
+                                <br><br>
+                            </div>
+                        </code>
+                    </div>
+                </div>
+            </li>
+        </ol>
+        <ol class="code-list">
+            <li>
+                <h3 id="11.2">11.2- Solda Fixed Navbar Yapısı</h3>
+                <div class="p-text">
+                    <p>Bu navbar web sitesinin sol tarafında durur. Hover ve metin özellikleri verilmiştir.</p>
+                    <p>Navbar web sitesinde genişlik olarak 15% yer kaplar. Yüksekliği ise boydan boyadır. Navbar siz sayfada aşağıya inseniz bile sol tarafta sabit kalır.</p>
+                    <p>Html kodunu kopyalarak sitenizde kullanabilirsiniz.</p>
+                </div>
+                <div class="show-item">
+                    <div class="nav-item">
+                        <ol class="navbar">
+                            <li><a href="#">Menü </a></li>
+                            <li><a href="#">Menü </a></li>
+                            <li><a href="#">Menü </a></li>
+                            <li><a href="#">Menü </a></li>
+                            <li><a href="#">Menü </a></li>
+                            <li><a href="#">Menü </a></li>
+                        </ol>
+                    </div>  
+                </div>
+                <div class="diskatman">
+                    <div class="ickatman">
+                        <code data-lang="html" class="kod düzeni">
+                            <div>
+                                <span>&lt;div class="fix-nav-item"&gt;</span>
+                                <br><br>
+                                <span>&lt;ol class="fix-navbar"&gt;</span>
+                                <br><br>
+                                <span>&lt;li&gt;&lt;a href="#"&gt;Menü &lt;/a&gt;&lt;/li&gt;</span>
+                                <br><br>
+                                <span>&lt;li&gt;&lt;a href="#"&gt;Menü &lt;/a&gt;&lt;/li&gt;</span>
+                                <br><br>
+                                <span>&lt;li&gt;&lt;a href="#"&gt;Menü &lt;/a&gt;&lt;/li&gt;</span>
+                                <br><br>
+                                <span>&lt;li&gt;&lt;a href="#"&gt;Menü &lt;/a&gt;&lt;/li&gt;</span>
+                                <br><br>
+                                <span>&lt;li&gt;&lt;a href="#"&gt;Menü &lt;/a&gt;&lt;/li&gt;</span>
+                                <br><br>
+                                <span>&lt;li&gt;&lt;a href="#"&gt;Menü &lt;/a&gt;&lt;/li&gt;</span>
+                                <br><br>
+                                <span>&lt;/ol&gt;</span>
+                                <br><br>
+                                <span>&lt;/div&gt;</span>
+                                <br><br>
+                            </div>
+                        </code>
+                    </div>
+                </div>
+            </li>
+        </ol>
+        <ol class="code-list">
+            <li>
+                <h3 id="11.3">11.3- İnline Navbar Yapısı</h3>
+                <div class="p-text">
+                    <p>Bu navbar web sitesinin üst tarafında durur. Hover,metin özellikleri ve menü maddelerinin birbirinden ayrılabilmesi için yanlarına kırmızı çizgi verilmiştir.</p>
+                    <p>Navbar web sitesinde genişlik olarak 15% yer kaplar. Yüksekliği ise boydan boyadır. Navbar siz sayfada aşağıya inseniz bile sol tarafta sabit kalır.</p>
+                    <p>Html kodunu kopyalarak sitenizde kullanabilirsiniz.</p>
+                </div>
+                <div class="show-item">
+                    <div class="inl-nav-item">
+                        <ol class="inl-navbar">
+                            <li><a href="#">Menü </a></li>
+                            <li><a href="#">Menü </a></li>
+                            <li><a href="#">Menü </a></li>
+                            <li><a href="#">Menü </a></li>
+                            <li><a href="#">Menü </a></li>
+                            <li><a href="#">Menü </a></li>
+                        </ol>
+                    </div>  
+                </div>
+                <div class="diskatman">
+                    <div class="ickatman">
+                        <code data-lang="html" class="kod düzeni">
+                            <div>
+                                <span>&lt;div class="inl-nav-item"&gt;</span>
+                                <br><br>
+                                <span>&lt;ol class="inl-navbar"&gt;</span>
+                                <br><br>
+                                <span>&lt;li&gt;&lt;a href="#"&gt;Menü &lt;/a&gt;&lt;/li&gt;</span>
+                                <br><br>
+                                <span>&lt;li&gt;&lt;a href="#"&gt;Menü &lt;/a&gt;&lt;/li&gt;</span>
+                                <br><br>
+                                <span>&lt;li&gt;&lt;a href="#"&gt;Menü &lt;/a&gt;&lt;/li&gt;</span>
+                                <br><br>
+                                <span>&lt;li&gt;&lt;a href="#"&gt;Menü &lt;/a&gt;&lt;/li&gt;</span>
+                                <br><br>
+                                <span>&lt;li&gt;&lt;a href="#"&gt;Menü &lt;/a&gt;&lt;/li&gt;</span>
+                                <br><br>
+                                <span>&lt;li&gt;&lt;a href="#"&gt;Menü &lt;/a&gt;&lt;/li&gt;</span>
+                                <br><br>
+                                <span>&lt;/ol&gt;</span>
+                                <br><br>
+                                <span>&lt;/div&gt;</span>
+                                <br><br>
+                            </div>
+                        </code>
+                    </div>
+                </div>
+            </li>
+        </ol>
+        <ol class="code-list">
+            <li>
+                <h3 id="12">12- Dropdown Menü Yapısı</h3>
+                <div class="p-text">
+                    <p>Aşağıda ki dropdown html kodunu kullanarak dropwdown menünüzü oluşturabilirsiniz.</p>
+                    <p>Dropdown menüde yazıların hizasında imleç dursa bile navbar maddeleriyle etkileşim sağlanabiliyor. Böylelikle imlecin tam yazı üstüne gelme zorunluluğu ortadan kalkıyor.</p>
+                 </div>
+                <div class="show-item">
+                 <div class="drp-nav-item">
+                        <ol class="drp-navbar">
+                            <a class="menu-drop">
+                                <li class="drp-menu">Menü </li>
+                                <ul class="dropdown">
+                                  <li>Madde</li>
+                                  <li>Madde</li>
+                                  <li>Madde</li>
+                                  <li>Madde</li>
+                                </ul>
+                              </a>
+                            <li><a href="#">Menü </a></li>
+                            <li><a href="#">Menü </a></li>
+                            <li><a href="#">Menü </a></li>
+                            <li><a href="#">Menü </a></li>
+                            <li><a href="#">Menü </a></li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="diskatman">
+                    <div class="ickatman">
+                        <code data-lang="html" class="kod düzeni">
+                            <div>
+                                <span>&lt;div class="drp-nav-item"&gt;</span>
+                                <br><br>
+                                <span>&lt;ol class="drp-navbar"&gt;</span>
+                                <br><br>
+                                <span>&lt;a class="menu-drop"&gt;</span>
+                                <br><br>
+                                <span>&lt;li class="drp-menu"&gt;Menü Maddeleri&lt;/li&gt;</span>
+                                <br><br>
+                                <span>&lt;ul class="dropdown"&gt;</span>
+                                <br><br>
+                                <span>&lt;li&gt;Madde&lt;/li&gt;</span>
+                                <br><br>
+                                <span>&lt;li&gt;Madde&lt;/li&gt;</span>
+                                <br><br>
+                                <span>&lt;li&gt;Madde&lt;/li&gt;</span>
+                                <br><br>
+                                <span>&lt;li&gt;Madde&lt;/li&gt;</span>
+                                <br><br>
+                                <span>&lt;/ul&gt;</span>
+                                <br><br>
+                                <span>&lt;/a&gt;</span>
+                                <br><br>
+                                <span>&lt;/li&gt;</span>
+                                <br><br>
+                                <span>&lt;li&gt;&lt;a href="#"&gt;Menü Maddeleri&lt;/a&gt;&lt;/li&gt;</span>
+                                <br><br>
+                                <span>&lt;li&gt;&lt;a href="#"&gt;Menü Maddeleri&lt;/a&gt;&lt;/li&gt;</span>
+                                <br><br>
+                                <span>&lt;li&gt;&lt;a href="#"&gt;Menü Maddeleri&lt;/a&gt;&lt;/li&gt;</span>
+                                <br><br>
+                                <span>&lt;li&gt;&lt;a href="#"&gt;Menü Maddeleri&lt;/a&gt;&lt;/li&gt;</span>
+                                <br><br>
+                                <span>&lt;li&gt;&lt;a href="#"&gt;Menü Maddeleri&lt;/a&gt;&lt;/li&gt;</span>
+                                <br><br>
+                                <span>&lt;/ol&gt;</span>
+                                <br><br>
+                                <span>&lt;/div&gt;</span>
+                                
+                            </div>
+                        </code>
+                    </div>
+                </div>
+            </li>
+        </ol>
+        <ol class="code-list">
+            <li>
+                <h3 id="13">13- Form Yapısı</h3>
+                <div class="p-text">
+                <p>Form yapısını kullanarak her cihaz için responsive bir görünüm elde edebilirsiniz.</p>
+                <p>Aşağıda ki html kodunu kopyalayarak iletişim formu örneğini kullanabilirsiniz buton özellikleri ve inputlara yazılacak olan menü özellikleride ayrıca düzenlenmiştir.</p>
+                <p>Form yapısında zorunlu alanlar belirtilmiştir hatalı veya boş girişlerde form uyarı vermektedir.</p>
+            </div>
+                <div class="show-item">
+                    <div class="contact-form">
+                        <div class="headiletisim">İletİşİm Formu</div>
+                        <form action="#" method="post">
+                            <div class="form-group">
+                                <label for="name">Adınız:</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="name">Soyadınız:</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-posta Adresiniz:</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Mesajınız:</label>
+                                <textarea id="message" name="message" rows="4" required></textarea>
+                            </div>
+                            <button type="submit">Gönder</button>
+                        </form>
+                        </div>
+                </div>
+                <div class="diskatman">
+                    <div class="ickatman">
+                        <code data-lang="html" class="kod düzeni">
+                            <div>
+                            
+<span>&lt;div class="contact-form"&gt;</span>
+<br><br>
+<span>&lt;div&gt; class="headiletisim"&gt;İletİşİm Formu&lt;/div&gt;</span>
+<br><br>
+<span>&lt;form action="#" method="post"&gt;</span>
+<br><br>
+<span>&lt;div class="form-group"&gt;</span>
+<br><br>
+<span>&lt;label&gt; for="name"&gt;Adınız:&lt;/label&gt;</span>
+<br><br>
+<span>&lt;input type="text" id="name" name="name" required&gt;</span>
+<br><br>
+<span>&lt;/div&gt;</span>
+<br><br>
+<span>&lt;div class="form-group"&gt;</span>
+<br><br>
+<span>&lt;label&gt; for="name"&gt;Soyadınız:&lt;/label&gt;</span>
+<br><br>
+<span>&lt;input type="text" id="name" name="name" required&gt;</span>
+<br><br>
+<span>&lt;/div&gt;</span>
+<br><br>
+<span>&lt;div class="form-group"&gt;</span>
+<br><br>
+<span>&lt;label&gt; for="email"&gt;E-posta Adresiniz:&lt;/label&gt;</span>
+<br><br>
+<span>&lt;input type="email" id="email" name="email" required&gt;</span>
+<br><br>
+<span>&lt;/div&gt;</span>
+<br><br>
+<span>&lt;div class="form-group"&gt;</span>
+<br><br>
+<span>&lt;label&gt; for="message"&gt;Mesajınız:&lt;/label&gt;</span>
+<br><br>
+<span>&lt;textarea&gt; id="message" name="message" rows="4" required&gt;&lt;/textarea&gt;</span>
+<br><br>
+<span>&lt;/div&gt;</span>
+<br><br>
+<span>&lt;button&gt; type="submit"&gt;Gönder&lt;/button&gt;</span>
+<br><br>
+<span>&lt;/form&gt;</span>
+<br><br>
+<span>&lt;/div&gt;</span>
+                            </div>
+                        </code>
+                    </div>
+                </div>
+            </li>
+        </ol>
+    </div>
+</body>
+
+</html>
